@@ -6,14 +6,12 @@ def pytest_addoption(parser):
         "--url",
         action="store",
         default="https://ya.ru",
-        help="URL для проверки",
     )
     parser.addoption(
         "--status_code",
         action="store",
         type=int,
         default=200,
-        help="Ожидаемый статус-код",
     )
 
 
